@@ -3,7 +3,7 @@
 // Base URL backend Laravel/CI di XAMPP
 // ============================================================
 
-export const BASE_URL = 'http://127.0.0.1:8000/api';
+export const BASE_URL = 'https://app-344191b0-45f0-4353-b784-e128130e2f95.cleverapps.io/api';
 
 // ── Helper: ambil token dari localStorage ──────────────────
 function authHeaders(): Record<string, string> {
