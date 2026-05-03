@@ -1,0 +1,8 @@
+{
+    "deploy": {
+        "webroot": "/public"
+    },
+    "configuration": {
+        "runner": "composer install --no-dev --optimize-autoloader && php artisan config:cache && php artisan migrate --force"
+    }
+}
