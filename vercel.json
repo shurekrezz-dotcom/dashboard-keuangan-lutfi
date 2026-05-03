@@ -1,17 +1,13 @@
 {
-    "functions": {
-        "backend/**/*.php": {
-            "runtime": "vercel-php@0.7.1"
-        }
-    },
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "/backend/$1.php"
+    "experimentalServices": {
+        "frontend": {
+            "routePrefix": "/",
+            "framework": "vite"
         },
-        {
-            "src": "/(.*)",
-            "dest": "/$1"
+        "backend": {
+            "entrypoint": "backend",
+            "routePrefix": "/_/backend",
+            "framework": "vite"
         }
-    ]
+    }
 }
